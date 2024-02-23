@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontaswome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="final-style.css">
+
+
+    <title>FINAL-Alpha</title>
+</head>
+
+<body id="scrolltop">
+  <div class="main-container">
+    <img class="alphalogoresponsive" src="logo.png" alt="logo">
+    <div class="toggle_btn"><i class="fa-solid fa-bars" ></i></div>
+    <div class="flex-container">
+
+        <ul class="navbar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#AboutUs">About Us</a> </li>
+            <li><a href="#Schedule">Schedule</a> </li>
+            <div><img class="alphalogo" src="logo.png" alt="logo"></div>
+            <li><a href="#Events">EVENTS</a> </li>
+            <li><a href="#Pricing">PRICING</a> </li>
+            <li><a href="#Contact">Contact</a> </li>
+        </ul>
+        
+        
+        
+        <div class="dropdown_menu "><li><a href="#Home">Home</a></li>
+            <li><a href="#AboutUs">About Us</a> </li>
+            <li><a href="#Schedule">Schedule</a> </li>
+            <li><a href="#Pricing">Pricing</a> </li>
+            <li><a href="#Events">Events</a> </li>
+            <li><a href="#Contact">Contact</a> </li></div>
+    </div>
+
+    <div class="flex-container-home">
+        
+        <div class="text-div">
+          <p id="Home" class="home-title">Alpha <span class="functional-color">Functional</span> Training</p>
+          <p class="home-text">Functional training is a form of exercise that focuses on improving movement patterns and functionality in everyday activities.</p>
+          <button type="button" class="button">Join us</button>
+        </div>
+
+        <div class="home-img">
+          <img src="home-fit-img.jpg" alt="" class="home-fit-img">
+        </div>
+    
+    </div>
+<!-- --------------------------------------------- END OF NAVBAR + HOME SECTION -------------------------------------------------------------- -->
+
+<!-- ABOUT-US section -->
+
+  <div class="flex-container-about-us" id="AboutUs">
+
+    <div class="image-div">
+      <img class="about-us-image" src="kep.jpg" alt="csoportkep">
+    </div>
+    <div class="text-div">
+      <h3 class="about-us-title">About <span class="functional-color">US</span></h3>
+      <p class="about-us-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet recusandae ratione, voluptates sequi deleniti nostrum excepturi cum ea et ut distinctio! Eum at iure, doloremque reiciendis ex sit autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet recusandae ratione, voluptates sequi deleniti nostrum excepturi cum ea et ut distinctio! Eum at iure, doloremque reiciendis ex sit autem.</p>
+    </div>    
+  </div>
+
+  <!-- ----------------------------------------------------- END OF ABOUT US SECTION --------------------------------------------------------- -->
+
+  <!-- SCHEDULE SECTION -->
+
+  <h1 class="schedule-title" id="Schedule">Schedule</h1>
+
+  <div class="grid-container">
+    <div class="grid-item header-row">TIME</div>
+    <div class="grid-item header-row">HÉTFŐ</div>
+    <div class="grid-item header-row">KEDD</div>  
+    <div class="grid-item header-row">SZERDA</div>
+    <div class="grid-item header-row">CSÜTÖRTÖK</div>
+    <div class="grid-item header-row">PÉNTEK</div>  
+    <div class="grid-item header-row">SZOMBAT</div>
+    <div class="grid-item time-row">07:00</div>
+    <div class="grid-item event-cell-hover first-row-color" id="personal-training" onclick="togglePopup('personal-training')">P.T. / Funkcionális edzés</div>
+    <div class="grid-item event-cell-hover first-row-color" id="personal-training" onclick="togglePopup('personal-training')">P.T. / Funkcionális edzés</div>
+    <div class="grid-item event-cell-hover first-row-color" id="personal-training" onclick="togglePopup('personal-training')">P.T. / Funkcionális edzés</div>  
+    <div class="grid-item event-cell-hover first-row-color" id="personal-training" onclick="togglePopup('personal-training')">P.T. / Funkcionális edzés</div>
+    <div class="grid-item event-cell-hover first-row-color" id="personal-training" onclick="togglePopup('personal-training')">P.T. / Funkcionális edzés</div>
+    <div class="grid-item event-cell"></div>  
+    <div class="grid-item time-row">08:00</div>
+    <div class="grid-item event-cell-hover second-row-color" id="cross-training" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell-hover second-row-color" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell-hover second-row-color" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell-hover second-row-color" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>  
+    <div class="grid-item event-cell-hover second-row-color" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell "></div>
+    <div class="grid-item time-row">09:00 - 15:00</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">P.T. / Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">P.T. / Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">P.T. / Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">P.T. / Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">P.T. / Open Gym</div>  
+    <div class="grid-item event-cell-hover fourth-color" id="mobility" onclick="togglePopup('mobility')">09:00 Mobility/<br>Streching 40 min</div>
+    <div class="grid-item time-row">10:00</div>  
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item event-cell-hover fifth-color" id="calisthenics" onclick="togglePopup('calisthenics')">Calisthenics / Street Workout</div>  
+    <div class="grid-item time-row">17:00</div>
+    <div class="grid-item event-cell-hover first-row-color" onclick="togglePopup('personal-training')">Personal Training</div>  
+    <div class="grid-item event-cell-hover first-row-color" onclick="togglePopup('personal-training')">Personal Training</div>
+    <div class="grid-item event-cell-hover first-row-color" onclick="togglePopup('personal-training')">Personal Training</div>
+    <div class="grid-item event-cell-hover first-row-color" onclick="togglePopup('personal-training')">Personal Training</div>
+    <div class="grid-item event-cell-hover first-row-color" onclick="togglePopup('personal-training')">Personal Training</div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item time-row">18:15</div>
+    <div class="grid-item event-cell-hover second-row-color" id="cross-training" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell-hover sixst-color" id="cross-training" onclick="togglePopup('cross-training')">Kezdő funkcionális edzés</div>  
+    <div class="grid-item event-cell-hover second-row-color" id="cross-training" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell-hover sixst-color" id="cross-training" onclick="togglePopup('cross-training')">Kezdő funkcionális edzés</div>
+    <div class="grid-item event-cell-hover second-row-color" id="cross-training" onclick="togglePopup('cross-training')">Funkcionális edzés / Cross</div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item time-row">19:15</div>  
+    <div class="grid-item event-cell-hover fifth-color" id="calisthenics" onclick="togglePopup('calisthenics')">Calisthenics / Street Workout</div>
+    <div class="grid-item event-cell-hover fourth-color" id="mobility" onclick="togglePopup('mobility')">Mobility/<br>Streching 40 min</div>
+    <div class="grid-item event-cell-hover fifth-color" id="calisthenics" onclick="togglePopup('calisthenics')">Calisthenics / Street Workout</div>  
+    <div class="grid-item event-cell-hover fourth-color" id="mobility" onclick="togglePopup('mobility')">Mobility/<br>Streching 40 min</div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item event-cell"></div>
+    <div class="grid-item time-row">20:00 - 22:00</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">Open Gym</div>  
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">Open Gym</div>
+    <div class="grid-item event-cell-hover third-row-color" id="pt-open-gym" onclick="togglePopup('pt-open-gym')">Open Gym</div>
+    <div class="grid-item event-cell"></div>
+  </div>
+
+  <div class="popup" id="popup-1">
+    <div class="overlay">
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1 id="pop-up-title">Title</h1>
+        <p id="popup-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, eaque similique velit eveniet et ea reiciendis ipsa perferendis, deserunt dicta explicabo eos asperiores dolorum officia maiores. Necessitatibus iusto odio tempora?</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- Tablet view schedule -->
+  <div class="tb-schedule-flex-container">
+    <div class="tb-days" onclick="toggleDisplaySchedule('tb-monday')">HÉTFŐ</div>
+    <div class="tb-days" onclick="toggleDisplaySchedule('tb-tuesday')">KEDD</div>
+    <div class="tb-days" onclick="toggleDisplaySchedule('tb-monday')">SZERDA</div>
+    <div class="tb-days" onclick="toggleDisplaySchedule('tb-tuesday')">CSÜTÖRTÖK</div>
+    <div class="tb-days" onclick="toggleDisplaySchedule('tb-friday')">PÉNTEK</div>
+    <div class="tb-days" onclick="toggleDisplaySchedule('tb-saturday')">SZOMBAT</div>
+  </div>
+
+    <!-- MONDAY -->
+
+    <div class="tb-monday-schedule" id="tb-monday">
+      <div class="tb-close-btn" onclick="closeSchedule('tb-monday')">&times;</div>
+      <div class="event-container first-row-color">
+        <p class="timestamp">07:00</p>
+        <p class="class-type">P.T. / Funkcionális edzés</p>
+      </div>
+    
+      <div class="event-container second-row-color">
+        <p class="timestamp">08:00</p>
+        <p class="class-type">Funkcionális edzés / Cross</p>
+      </div>
+
+      <div class="event-container third-row-color">
+        <p class="timestamp">09:00 - 15:00</p>
+        <p class="class-type">P.T. / Open Gym</p>
+      </div>
+
+      <div class="event-container first-row-color">
+        <p class="timestamp">17:00</p>
+        <p class="class-type">Personal Training</p>
+      </div>
+
+      <div class="event-container second-row-color">
+        <p class="timestamp">18:15</p>
+        <p class="class-type">Funkcionális edzés / Cross</p>
+      </div>
+
+      <div class="event-container fifth-color">
+        <p class="timestamp">19:15</p>
+        <p class="class-type">Calisthenics / Street workout</p>
+      </div>
+
+      <div class="event-container third-row-color">
+        <p class="timestamp">20:00 - 22:00</p>
+        <p class="class-type">Open Gym</p>
+      </div>
+
+    </div>
+  
+      <!-- TUESDAY -->
+
+      <div class="tb-tuesday-schedule" id="tb-tuesday">
+        <div class="tb-close-btn" onclick="closeSchedule('tb-tuesday')">&times;</div>
+          <div class="event-container first-row-color">
+          <p class="timestamp">07:00</p>
+          <p class="class-type">P.T. / Funkcionális edzés</p>
+        </div>
+      
+        <div class="event-container second-row-color">
+          <p class="timestamp">08:00</p>
+          <p class="class-type">Funkcionális edzés / Cross</p>
+        </div>
+    
+        <div class="event-container third-row-color">
+          <p class="timestamp">09:00 - 15:00</p>
+          <p class="class-type">P.T. / Open Gym</p>
+        </div>
+    
+        <div class="event-container first-row-color">
+          <p class="timestamp">17:00</p>
+          <p class="class-type">Personal Training</p>
+        </div>
+    
+        <div class="event-container fifth-color">
+          <p class="timestamp">18:15</p>
+          <p class="class-type">Kezdő funkcionális edzés</p>
+        </div>
+    
+        <div class="event-container fourth-color">
+          <p class="timestamp">19:15</p>
+          <p class="class-type">Mobility / Streching 40 min</p>
+        </div>
+    
+        <div class="event-container third-row-color">
+          <p class="timestamp">20:00 - 22:00</p>
+          <p class="class-type">Open Gym</p>
+        </div>
+      </div>  
+
+      <!-- FRIDAY -->
+      <div class="tb-friday-schedule" id="tb-friday">
+        <div class="tb-close-btn" onclick="closeSchedule('tb-friday')">&times;</div>
+        <div class="event-container first-row-color">
+          <p class="timestamp">07:00</p>
+          <p class="class-type">P.T. / Funkcionális edzés</p>
+        </div>
+      
+        <div class="event-container second-row-color">
+          <p class="timestamp">08:00</p>
+          <p class="class-type">Funkcionális edzés / Cross</p>
+        </div>
+    
+        <div class="event-container third-row-color">
+          <p class="timestamp">09:00 - 15:00</p>
+          <p class="class-type">P.T. / Open Gym</p>
+        </div>
+    
+        <div class="event-container first-row-color">
+          <p class="timestamp">17:00</p>
+          <p class="class-type">Personal Training</p>
+        </div>
+    
+        <div class="event-container second-row-color">
+          <p class="timestamp">18:15</p>
+          <p class="class-type">Funkcionális edzés / Cross</p>
+        </div>
+    
+          
+        <div class="event-container third-row-color">
+          <p class="timestamp">20:00 - 22:00</p>
+          <p class="class-type">Open Gym</p>
+        </div>    
+      </div>
+    
+
+
+      <!-- SATURDAY -->
+      <div class="tb-saturday-schedule" id="tb-saturday">
+        <div class="tb-close-btn" onclick="closeSchedule('tb-saturday')">&times;</div>
+         
+        <div class="event-container third-row-color">
+          <p class="timestamp">09:00 - 15:00</p>
+          <p class="class-type">P.T. / Open Gym</p>
+        </div>
+    
+        <div class="event-container fifth-color">
+          <p class="timestamp">10:00</p>
+          <p class="class-type">Calisthenics / Street workout</p>
+        </div>    
+      </div>
+
+  <!-- MOBILE view schedule -->
+  <div class="mb-schedule-flex-container">
+    <div class="mb-days" onclick="toggleDisplayScheduleMobile('mb-monday')">H</div>
+    <div class="mb-days" onclick="toggleDisplayScheduleMobile('mb-tuesday')">K</div>
+    <div class="mb-days" onclick="toggleDisplayScheduleMobile('mb-monday')">SZ</div>
+    <div class="mb-days" onclick="toggleDisplayScheduleMobile('mb-tuesday')">CS</div>
+    <div class="mb-days" onclick="toggleDisplayScheduleMobile('mb-friday')">P</div>
+    <div class="mb-days" onclick="toggleDisplayScheduleMobile('mb-saturday')">SZ</div>
+  </div>
+
+   <!-- MONDAY -->
+
+   <div class="mb-monday-schedule" id="mb-monday">
+    <div class="mb-close-btn" onclick="closeScheduleMobile('mb-monday')">&times;</div>
+
+    <div class="mb-event-container first-row-color">
+      <p class="mb-timestamp">07:00</p>
+      <p class="mb-class-type">P.T. / Funkcionális edzés</p>
+    </div>
+  
+    <div class="mb-event-container second-row-color">
+      <p class="mb-timestamp">08:00</p>
+      <p class="mb-class-type">Funkcionális edzés / Cross</p>
+    </div>
+
+    <div class="mb-event-container third-row-color">
+      <p class="mb-timestamp">09:00 - 15:00</p>
+      <p class="mb-class-type">P.T. / Open Gym</p>
+    </div>
+
+    <div class="mb-event-container first-row-color">
+      <p class="mb-timestamp">17:00</p>
+      <p class="mb-class-type">Personal Training</p>
+    </div>
+
+    <div class="mb-event-container second-row-color">
+      <p class="mb-timestamp">18:15</p>
+      <p class="mb-class-type">Funkcionális edzés / Cross</p>
+    </div>
+
+    <div class="mb-event-container fifth-color">
+      <p class="mb-timestamp">19:15</p>
+      <p class="mb-class-type">Calisthenics / Street workout</p>
+    </div>
+
+    <div class="mb-event-container third-row-color">
+      <p class="mb-timestamp">20:00 - 22:00</p>
+      <p class="mb-class-type">Open Gym</p>
+    </div>
+
+  </div>
+
+    <!-- TUESDAY -->
+
+    <div class="mb-tuesday-schedule" id="mb-tuesday">
+      <div class="mb-close-btn" onclick="closeScheduleMobile('mb-tuesday')">&times;</div>
+      <div class="mb-event-container first-row-color">
+        <p class="mb-timestamp">07:00</p>
+        <p class="mb-class-type">P.T. / Funkcionális edzés</p>
+      </div>
+    
+      <div class="mb-event-container second-row-color">
+        <p class="mb-timestamp">08:00</p>
+        <p class="mb-class-type">Funkcionális edzés / Cross</p>
+      </div>
+  
+      <div class="mb-event-container third-row-color">
+        <p class="mb-timestamp">09:00 - 15:00</p>
+        <p class="mb-class-type">P.T. / Open Gym</p>
+      </div>
+  
+      <div class="mb-event-container first-row-color">
+        <p class="mb-timestamp">17:00</p>
+        <p class="mb-class-type">Personal Training</p>
+      </div>
+  
+      <div class="mb-event-container fifth-color">
+        <p class="mb-timestamp">18:15</p>
+        <p class="mb-class-type">Kezdő funkcionális edzés</p>
+      </div>
+  
+      <div class="mb-event-container fourth-color">
+        <p class="mb-timestamp">19:15</p>
+        <p class="mb-class-type">Mobility / Streching 40 min</p>
+      </div>
+  
+      <div class="mb-event-container third-row-color">
+        <p class="mb-timestamp">20:00 - 22:00</p>
+        <p class="mb-mb-class-type">Open Gym</p>
+      </div>
+    </div>  
+
+    <!-- FRIDAY -->
+    <div class="mb-friday-schedule" id="mb-friday">
+      <div class="mb-close-btn" onclick="closeScheduleMobile('mb-friday')">&times;</div>
+
+      <div class="mb-event-container first-row-color">
+        <p class="mb-timestamp">07:00</p>
+        <p class="mb-class-type">P.T. / Funkcionális edzés</p>
+      </div>
+    
+      <div class="mb-event-container second-row-color">
+        <p class="mb-timestamp">08:00</p>
+        <p class="mb-class-type">Funkcionális edzés / Cross</p>
+      </div>
+  
+      <div class="mb-event-container third-row-color">
+        <p class="mb-timestamp">09:00 - 15:00</p>
+        <p class="mb-class-type">P.T. / Open Gym</p>
+      </div>
+  
+      <div class="mb-event-container first-row-color">
+        <p class="mb-timestamp">17:00</p>
+        <p class="mb-class-type">Personal Training</p>
+      </div>
+  
+      <div class="mb-event-container second-row-color">
+        <p class="mb-timestamp">18:15</p>
+        <p class="mb-class-type">Funkcionális edzés / Cross</p>
+      </div>
+  
+        
+      <div class="mb-event-container third-row-color">
+        <p class="mb-timestamp">20:00 - 22:00</p>
+        <p class="mb-class-type">Open Gym</p>
+      </div>    
+    </div>
+  
+
+
+    <!-- SATURDAY -->
+    <div class="mb-saturday-schedule" id="mb-saturday">
+      <div class="mb-close-btn" onclick="closeScheduleMobile('mb-saturday')">&times;</div>
+
+        
+      <div class="mb-event-container third-row-color">
+        <p class="mb-timestamp">09:00 - 15:00</p>
+        <p class="mb-class-type">P.T. / Open Gym</p>
+      </div>
+  
+      <div class="mb-event-container fifth-color">
+        <p class="mb-timestamp">10:00</p>
+        <p class="mb-class-type">Calisthenics / Street workout</p>
+      </div>    
+    </div>
+<!-- ---------------------------------------------------- END OF SCHEDULE SECTION ---------------------------------------------------------- -->
+
+
+<!-- EVENTS SECTION -->
+
+<h1 class="events-title" id="Events"><span class="functional-color">ALPHA</span> EVENTS</h1>
+
+<div class="card-container">
+  <div class = "card">
+    <img src="training-event.webp" alt="">
+    <div class="card-content">
+      <h2>
+        Event
+        <div class="date"><i class="fa-regular fa-calendar-days"></i> 2024.05.19</div>
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+      </p>
+      <a href="" target="_blank">
+      <button class="participate" type="button">Participate</button></a>
+    </div>
+  </div>
+
+  <div class = "card">
+    <img src="training-event.webp" alt="">
+    <div class="card-content">
+      <h2>
+        Event
+        <div class="date"><i class="fa-regular fa-calendar-days"></i> 2024.05.19</div>
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+      </p>
+      <a href="" target="_blank">
+      <button class="participate" 
+     type="button">Participate</button>
+    </a>
+    </div>
+  </div>
+
+    
+  <div class = "card">
+      <img src="training-event.webp" alt="">
+      <div class="card-content">
+          <h2>
+              Event
+              <div class="date"><i class="fa-regular fa-calendar-days"></i> 2024.05.19</div>
+            </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+      </p>
+      <a href="" target="_blank">
+      <button class="participate" type="button">Participate</button></a>
+    </div>
+  </div>
+
+
+</div>  
+
+<!-- --------------------------------------------------- END OF SCHEDULE SECTION --------------------------------------------------------- -->
+
+<!-- PRICING SECTION -->
+
+
+<h1 class="events-title" id="Pricing"><span class="functional-color">ALPHA</span> PRICES</h1>
+
+
+
+<div class="pricing-container">
+  <button class="togglebtn" type="button" onclick="toggleShowPrices('group-train')">Csoportos edzes</button>
+
+  <div class="pricing-groups" id="group-train">
+      
+<div class="pricing-card">
+  <div class="pricing-card-title">
+      <h2>Csoportos Edzes</h2>
+      <p><i ></i><Span>35 Ron</Span>/month</p>
+  </div>
+  <div class="pricing-card-content">
+    <p>1 alkalom</p>
+  </div>
+</div>
+<div class="pricing-card">
+  <div class="pricing-card-title">
+      <h2>Csoportos Edzes</h2>
+      <p><Span>200 Ron</Span>/month</p>
+  </div>
+  <div class="pricing-card-content">
+    <p>8 alkalom</p>
+  </div>
+</div>
+<div class="pricing-card">
+  <div class="pricing-card-title">
+      <h2>Csoportos Edzes</h2>
+      <p><Span>250 Ron</Span>/month</p>
+  </div>
+  <div class="pricing-card-content">
+    <p>10 alkalom</p>
+
+  </div>
+  
+</div>
+
+<div class="pricing-card">
+  <div class="pricing-card-title">
+      <h2>Csoportos Edzes</h2>
+      <p><Span>400 Ron</Span>/month</p>
+  </div>
+  <div class="pricing-card-content">
+    <p>VIP - korlátlan alkalom</p>
+
+  </div>
+  
+</div>
+</div>
+
+
+
+<!-- szemelyi edzesek -->
+
+<button class="togglebtn" type="button"
+onclick="toggleShowPrices('personal-train')">Szemelyi edzes</button>
+<div class="pricing-personal" id="personal-train">
+  <div class="pricing-card">
+      <div class="pricing-card-title">
+          <h2>Szemelyi Edzes</h2>
+          <p><i ></i><Span>80 Ron</Span>/month</p>
+      </div>
+      <div class="pricing-card-content">
+        <p>1 alkalom</p>
+
+      </div>
+  </div>
+
+  <div class="pricing-card">
+      <div class="pricing-card-title">
+          <h2>Szemelyi Edzes</h2>
+          <p><Span>400 Ron</Span>/month</p>
+      </div>
+      <div class="pricing-card-content">
+        <p>8 edzés / hónap</p>
+      </div>
+  </div>
+
+  <div class="pricing-card">
+      <div class="pricing-card-title">
+          <h2>Szemelyi Edzes</h2>
+          <p><Span>500 Ron</Span>/month</p>
+      </div>
+      <div class="pricing-card-content">
+        <p>10 edzés / hónap</p>
+
+      </div>
+      
+  </div>
+</div>
+
+
+
+
+<!-- OPEN Gym -->
+<button class="togglebtn" type="button"onclick="toggleShowPrices('open-train')">Open Gym</button>
+
+<div class="pricing-open" id="open-train">
+<div class="pricing-card">
+  <div class="pricing-card-title">
+              <h2>Open Gym</h2>
+              <p><i ></i><Span>30 Ron</Span>/month</p>
+          </div>
+          <div class="pricing-card-content">
+              <p>1 alkalom</p>
+  
+          </div>
+      </div>
+
+      <div class="pricing-card">
+          <div class="pricing-card-title">
+              <h2>Open Gym</h2>
+              <p><Span>200 Ron</Span>/month</p>
+          </div>
+          <div class="pricing-card-content">
+            <p>korlátlan alkalom</p>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<!-- -------------------------------------------------------- END OF PRICING SECTION -------------------------------------------------------- -->
+
+
+
+<!-- FOOTER SECTION -->
+
+
+  <footer class="footer-section" id="Contact">
+    <div class="location">
+      <h2>FIND US HERE :</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3057870694752!2d25.81370048627069!3d45.85700075380285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b4a3611b184e63%3A0x61895c02aae0877c!2sStrada%20Constructorilor%207%2C%20Sf%C3%A2ntu%20Gheorghe%20520036!5e0!3m2!1shu!2sro!4v1702556388059!5m2!1shu!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-details">
+      <h2>CONTACT US :</h2>
+      <h3>Tel: +40 - 123 - 456 - 789</h3>
+      <h3>Email address: alphafunctional@gmail.com</h3>
+      <div class="social-buttons">
+        <a href=""><img src="facebook.png" alt=""></a>
+        <a href=""><img src="instagram.png" alt=""></a>
+      </div>
+    </div>
+
+    
+  </footer>
+
+  <div class="gt-web">
+      <h3>Created by:</h3>
+      <img src="logo-no-background.png" alt="">
+  </div>
+
+  <!-- ------------------------------------------------- END OF FOOTER SECTION --------------------------------------------------------------- -->
+
+  <!-- FLOATING BUTTON -->
+
+  <div class="floating-button">
+    <img src="logo.png" alt="alpha-logo">
+    <a href="#scrolltop">HOME</a>
+  </div>
+
+</div>
+  
+
+
+
+  <script src="final-index.js"></script>
+
+</body>
+
+</html>
